@@ -1,6 +1,9 @@
 <?php
 namespace Tariff;
 
+use \CIBlockElement;
+use \CIBlockSection;
+
 abstract class OptionAbstract implements OptionInterface
 {
     protected $companyID = 0;
@@ -26,6 +29,7 @@ abstract class OptionAbstract implements OptionInterface
         if (!$tariffID) {
             return false;
         }
+
         $cElem = new CIBlockElement;
         $arTariff = $cElem->GetByID($tariffID)->Fetch();
         if (empty($arTariff)) {

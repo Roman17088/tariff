@@ -3,6 +3,7 @@ namespace Tariff;
 use \Exception;
 
 // сделано для Bitrix
+use \CModule;
 CModule::IncludeModule('iblock');
 
 class OptionBase extends OptionAbstract implements OptionInterface
