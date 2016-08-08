@@ -3,6 +3,7 @@ namespace Tariff;
 
 use \CIBlockElement;
 use \CIBlockSection;
+use \CFG;
 
 abstract class OptionAbstract implements OptionInterface
 {
@@ -36,7 +37,6 @@ abstract class OptionAbstract implements OptionInterface
             return false;
         }
         $this->arTariff = json_decode($arTariff['DETAIL_TEXT'], true);
-        echo "get tariff\n";
         return true;
     }
 
