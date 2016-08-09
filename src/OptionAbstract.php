@@ -86,6 +86,6 @@ abstract class OptionAbstract implements OptionInterface
      */
     public function hasOption()
     {
-        return (bool)$this->arTariff[ $this->symbolCode ];
+        return (bool)$this->arTariff[ $this->symbolCode ]['value'];
     }
 }
